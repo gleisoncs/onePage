@@ -40,7 +40,7 @@ public class WishController {
 		Long timeLimit = System.currentTimeMillis();
 
 		try {
-			boolean saved = wishService.save(wish);
+			wishService.save(wish);
 		} catch (Exception e) {
 		}
 
