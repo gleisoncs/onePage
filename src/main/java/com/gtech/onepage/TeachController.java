@@ -3,7 +3,8 @@ package com.gtech.onepage;
 import java.util.Collections;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import com.gtech.onepage.service.UserService;
 @Controller
 public class TeachController {
 
-	@Autowired
+	@Inject
 	UserService userService;
 	
 	@RequestMapping(value = "/teach", method = RequestMethod.GET)
